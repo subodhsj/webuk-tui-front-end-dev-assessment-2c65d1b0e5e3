@@ -1,0 +1,22 @@
+.mainBanner {
+    max-width: 45em;
+    float: right;
+    margin: 5em 7em 0 0;
+    padding: 0;
+    height: 22.7em;
+}
+.babyStepsNav{
+  position: static;
+  float: left;
+  width: 30%;
+}
+.babyStepsNav li.menuHandle{
+  display: none;
+}
+.babyStepContents{
+  float: left;
+  width: 69%;
+}
+.babyStepContent{
+  margin: 0 7em;
+}

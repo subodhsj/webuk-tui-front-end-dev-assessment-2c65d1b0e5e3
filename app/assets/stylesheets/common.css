@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+/* Reset browser default style */
+* {	margin: 0;	padding: 0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* start of common style */
+body{
+  font: 10px/10px 'Source Sans Pro', sans-serif;
+  background: #bbbfc2;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.page{
+  width: 96%;
+  box-shadow: 0px 0px 3em 0.1em #666;
+  margin: 0 auto 5em auto;
+  max-width: 100em;
+  background: #fff;
+}
+.mainHeader{
+  color: #fff;
+  background: url('../images/header.jpg') no-repeat #000;
+}
+.mainBanner {
+  padding: 28.6em 2em 1em 0;
+  text-align: right;
+}
+.headingMainText{
+  font-size: 5em;
+  text-transform: uppercase;
+  max-width: 40em;
+  line-height: 1em;
+  margin: 0.3em 0 0;
+  text-align: right;
+}
+.headingSubText {
+    font: 300 3.2em/1em 'Open Sans';
+}
+.mainContent{
+  margin-top: 6em;
+}
+.babyStepsNav{
+  position: fixed;
+  width: 25em;
+  min-width: 16em;
+  left: -18.5em;
+  top: 0;
+	border-top: solid 1px #ebeced;
+	border-bottom: solid 1px #ebeced;
+  background: -moz-linear-gradient(left, rgba(235,236,237,1) 0%, rgba(235,236,237,1) 93%, rgba(209,213,214,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,236,237,1)), color-stop(93%, rgba(235,236,237,1)), color-stop(100%, rgba(209,213,214,1)));
+  background: -webkit-linear-gradient(left, rgba(235,236,237,1) 0%, rgba(235,236,237,1) 93%, rgba(209,213,214,1) 100%);
+  background: -o-linear-gradient(left, rgba(235,236,237,1) 0%, rgba(235,236,237,1) 93%, rgba(209,213,214,1) 100%);
+  background: -ms-linear-gradient(left, rgba(235,236,237,1) 0%, rgba(235,236,237,1) 93%, rgba(209,213,214,1) 100%);
+  background: linear-gradient(to right, rgba(235,236,237,1) 0%, rgba(235,236,237,1) 93%, rgba(209,213,214,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebeced', endColorstr='#d1d5d6', GradientType=1 );
+}
+.babyStepsNav.expanded{
+	left: 0;
+}
+.babyStepsNav li{
+  cursor: pointer;
+  font-size: 1.8em;
+  line-height: 3.33em;
+  text-align: right;
+  padding-right: 1.33em;
+  color: #9ba0a4;
+  border-bottom: solid 1px #fff;
+}
+.babyStepsNav li.active, .babyStepsNav li:hover{
+  background: #fff;
+  color: #36abe1;
+  font-weight: 600;
+}
+.babyStepsNav li.menuHandle{
+  line-height: 1.5em;
+  text-align: right;
+  background: #333;
+  font-weight: 700;
+}
+.babyStepsNav .icon{
+  background: url('../images/icons/sprites/icons_small.png') 100px 100px no-repeat transparent;
+  display: block;
+  height: 1.5em;
+  width: 1.7em;
+  margin: 1em 0 0 0.5em;
+  float: right;
+}
+.babyStep1 .icon{
+  background-position: 0px 0;
+}
+.babyStep2 .icon{
+  background-position: 0 -1.4em;
+}
+.babyStep3 .icon{
+  background-position: 0 -2.65em;
+}
+.babyStep4 .icon{
+  background-position: 0 -4em;
+}
+.babyStep5 .icon{
+  background-position: 0 -5.6em;
+}
+.babyStep6 .icon{
+  background-position: 0 -6.9em;
+}
+.babyStep7 .icon{
+  background-position: 0 -8.34em;
+}
+.babyStep1:hover .icon,.babyStep1.active .icon{
+  background-position: 0px -9.75em;
+}
+.babyStep2:hover .icon,.babyStep2.active .icon{
+  background-position: 0 -11.15em;
+}
+.babyStep3:hover .icon,.babyStep3.active .icon{
+  background-position: 0 -12.4em;
+}
+.babyStep4:hover .icon,.babyStep4.active .icon{
+  background-position: 0 -13.75em;
+}
+.babyStep5:hover .icon,.babyStep5.active .icon{
+  background-position: 0 -15.3em;
+}
+.babyStep6:hover .icon,.babyStep6.active .icon{
+  background-position: 0 -16.65em;
+}
+.babyStep7:hover .icon,.babyStep7.active .icon{
+  background-position: 0  -18.1em;
+}
+.babyStepContents {
+    min-height: 40em;
+}
+.babyStepContent{
+  font: normal 1.3em/1.385em Helvetica;
+  color: #65686f;
+  margin: 0 1em;
+	display: none;
+}
+.babyStepContent.active{
+	display: block;
+}
+.babyStepContent .babyStepIcon{
+  float: left;
+  margin: 0 1em 1em 0;
+}
+.heading{
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 1em;
+  color: #36abe1;
+}
+.subHeading{
+  font-size: 1.8em;
+  color: #5c6366;
+  line-height: 1.15em;
+  font-weight: normal;
+}
+.babyStepContent p{
+  clear: both;
+  margin-top: 1.33em;
+}
+.stepMessage{
+  margin-top: 4em;
+}
+.stepMessage a{
+  color: #6fbee7;
+}
+/* end of common style */
